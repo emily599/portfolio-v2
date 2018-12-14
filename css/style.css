@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #C8ABAD;
+  font-family: 'Quicksand', sans-serif; }
+
+header {
+  color: #5B4F4F; }
+
+.headerWrapper {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top-color: #5B4F4F;
+  border-top-style: solid;
+  border-top-width: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 3px;
+  text-align: center; }
+  .headerWrapper .nameTitle {
+    padding: 100px; }
+  .headerWrapper .name {
+    border-bottom-style: solid;
+    border-bottom-color: #5B4F4F;
+    border-bottom-width: 1px;
+    padding-bottom: 10px; }
+  .headerWrapper .title {
+    padding-top: 10px;
+    padding-bottom: 80px; }
+
+.about {
+  height: 350px;
+  width: 100%;
+  background-color: #5B4F4F; }
