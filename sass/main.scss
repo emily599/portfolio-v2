@@ -45,7 +45,39 @@ header{
 }
 
 .about{
-    height: 350px;
+    // height: 350px;
     width:100%;
     background-color: #5B4F4F;
+
+    .aboutContainer {
+        height: 100%;
+    }
+
+    .aboutBorderControl {
+        position: absolute;
+        border-color: #C8ABAD;
+        border-width: 1px;
+        border-style: solid;
+        width: 65%;
+        height: 30%;
+    }
+
+    .aboutBorder {
+        height: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutDescription {
+        color: #5B4F4F;
+        background-color: #D8D8D8;
+        width: 50%;
+        height: 70%;
+        padding: 50px;
+        letter-spacing: 1px;
+        line-height: 32px;
+        margin: 100px;
+        z-index: 2;
+    }
 }
