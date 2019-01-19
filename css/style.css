@@ -112,24 +112,38 @@ header {
     background-color: #ffffff;
     height: 75px;
     width: 39%;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border: none; }
+    .contact-box .name-input-box::placeholder {
+      padding-left: 20px; }
   .contact-box .email-input-box {
     background-color: #ffffff;
     height: 75px;
     width: 39%;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border: none; }
+    .contact-box .email-input-box::placeholder {
+      padding-left: 20px; }
   .contact-box .message-input-box {
     background-color: #ffffff;
     height: 400px;
     width: 86%;
     margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     margin-top: 40px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border: none;
+    border: none; }
+    .contact-box .message-input-box::placeholder {
+      padding-left: 20px; }
   .contact-box .submit-button {
     margin: auto;
     width: 50%;
     height: 75px;
     background-color: white;
     color: #5B4F4F;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 40px; }
+  .contact-box .submit-button:hover {
+    background-color: #C8ABAD; }

@@ -148,6 +148,12 @@ img{
         height: 75px;
         width: 39%;
         border-radius: 10px;
+        border:none;
+
+        &::placeholder{
+            padding-left: 20px;
+
+        }
     }
 
     .email-input-box{
@@ -155,6 +161,12 @@ img{
         height: 75px;
         width: 39%;
         border-radius: 10px;
+        border:none;
+
+        &::placeholder{
+            padding-left: 20px;
+
+        }
     }
   
     .message-input-box{
@@ -162,9 +174,15 @@ img{
         height: 400px;
         width: 86%;
         margin: auto;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         margin-top: 40px;
-        border-radius: 10px
+        border-radius: 10px;
+        border:none;
+        border:none;
+
+        &::placeholder{
+            padding-left: 20px;
+        }
     }
 
     .submit-button {
@@ -174,6 +192,13 @@ img{
         background-color: white;
         color: #5B4F4F;
         border-radius: 10px;
+        border: none;
+        margin-bottom: 40px;
         
     }
+
+    .submit-button:hover {
+        background-color: #C8ABAD;
+    }
+    
 }
