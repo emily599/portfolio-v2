@@ -23,7 +23,7 @@ header{
     margin-right:20px;
     border-top-color: #5B4F4F;
     border-top-style: solid;
-    border-top-width: 2px;
+    border-top-width: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +44,9 @@ header{
     }
 }
 
+
+
+
 .about{
     // height: 350px;
     width:100%;
@@ -59,7 +62,7 @@ header{
         border-width: 1px;
         border-style: solid;
         width: 65%;
-        height: 30%;
+        height: 50%;
     }
 
     .aboutBorder {
@@ -79,5 +82,98 @@ header{
         line-height: 32px;
         margin: 100px;
         z-index: 2;
+    }
+}
+
+
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    
+    .project-box{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin:auto;
+        padding:50px;
+        
+    }
+    .project-text{
+            float: right;
+            width:500px;
+            padding: 40px;
+            background-color: #D8D8D8;
+            line-height: 30px;
+            p{
+            letter-spacing: 1px;
+            }
+    }
+img{
+    object-fit: fill;
+    width: 500px;
+}
+}
+
+
+
+.contact-box{
+    margin: auto;
+    width: 70%;
+    height:700px;
+    background-color: #D8D8D8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 100px;
+
+    .contact-header {
+        text-align: center;
+        color: #5B4F4F;
+        font-size:45px;
+        line-height: 68px;
+        margin-top: 10px;
+    }
+
+    .name-email-box{
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .name-input-box{
+        background-color: #ffffff;
+        height: 75px;
+        width: 39%;
+        border-radius: 10px;
+    }
+
+    .email-input-box{
+        background-color: #ffffff;
+        height: 75px;
+        width: 39%;
+        border-radius: 10px;
+    }
+  
+    .message-input-box{
+        background-color: #ffffff;
+        height: 400px;
+        width: 86%;
+        margin: auto;
+        margin-bottom: 80px;
+        margin-top: 40px;
+        border-radius: 10px
+    }
+
+    .submit-button {
+        margin: auto;
+        width:50%;
+        height: 75px;
+        background-color: white;
+        color: #5B4F4F;
+        border-radius: 10px;
+        
     }
 }
