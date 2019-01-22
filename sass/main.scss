@@ -30,7 +30,7 @@ header{
     letter-spacing: 3px;
     text-align: center;
     .nameTitle{
-        padding: 100px;
+        padding-top: 100px;
     }
     .name{
         border-bottom-style: solid;
@@ -41,6 +41,25 @@ header{
     .title{
         padding-top:10px;
         padding-bottom: 80px;
+    }
+
+    .triangles {
+        display: flex;
+        flex-direction: column;
+        svg {
+            margin: 0 auto;
+
+            &:last-child {
+                margin-top: -55px;
+            }
+        }  
+    }
+    .header-box-line {
+        width: 1px;
+        height: 120px;
+        background-color: #5B4F4F;
+        margin: 0 auto;
+        margin-top: -10px;
     }
 }
 
@@ -55,14 +74,24 @@ header{
     .aboutContainer {
         height: 100%;
     }
+    .about-box-line {
+        width: 1px;
+        height: 100px;
+        background-color: #C8ABAD;
+        margin: 0 auto;
+    }
 
     .aboutBorderControl {
         position: absolute;
         border-color: #C8ABAD;
         border-width: 1px;
         border-style: solid;
-        width: 65%;
-        height: 50%;
+        width: 60%;
+        height: 70%;
+        top: 50%;  
+        left: 50%;
+        
+        transform: translate(-50%, -50%);
     }
 
     .aboutBorder {
@@ -70,9 +99,12 @@ header{
         display:flex;
         align-items: center;
         justify-content: center;
+        padding-top: 0;
+        position: relative;
     }
 
     .aboutDescription {
+        position: relative;
         color: #5B4F4F;
         background-color: #D8D8D8;
         width: 50%;
@@ -80,8 +112,8 @@ header{
         padding: 50px;
         letter-spacing: 1px;
         line-height: 32px;
-        margin: 100px;
-        z-index: 2;
+        // margin: 100px;
+        // z-index: 5;
     }
 }
 
@@ -91,13 +123,46 @@ header{
 .projects {
     display: flex;
     flex-direction: column;
-    
+    .project-box-line {
+        width: 1px;
+        height: 120px;
+        background-color: #5B4F4F;
+        margin: 0 auto;
+        margin-top: -10px;
+    }
+    .project-box-line-between{
+        width: 1px;
+        height: 120px;
+        background-color: #5B4F4F;
+        margin: 0 auto;
+    }
+    .project-header {
+        color: #5B4F4F;
+        margin: 0 auto;
+        font-size:45px;
+        line-height: 68px;
+        margin-top: 10px;
+    }
+    .triangles {
+        display: flex;
+        flex-direction: column;
+        svg {
+            margin: 0 auto;
+
+            &:last-child {
+                margin-top: -55px;
+            }
+        }  
+    }
     .project-box{
         display: flex;
         flex-direction: row;
+        justify-content: center ;
         width: 70%;
         margin:auto;
         padding:50px;
+        padding-top:0;
+        padding-bottom: 0;
         
     }
     .project-text{
@@ -113,6 +178,7 @@ header{
 img{
     object-fit: fill;
     width: 500px;
+    height: 100%;
 }
 }
 

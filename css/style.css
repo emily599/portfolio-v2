@@ -28,7 +28,7 @@ header {
   letter-spacing: 3px;
   text-align: center; }
   .headerWrapper .nameTitle {
-    padding: 100px; }
+    padding-top: 100px; }
   .headerWrapper .name {
     border-bottom-style: solid;
     border-bottom-color: #5B4F4F;
@@ -37,44 +37,93 @@ header {
   .headerWrapper .title {
     padding-top: 10px;
     padding-bottom: 80px; }
+  .headerWrapper .triangles {
+    display: flex;
+    flex-direction: column; }
+    .headerWrapper .triangles svg {
+      margin: 0 auto; }
+      .headerWrapper .triangles svg:last-child {
+        margin-top: -55px; }
+  .headerWrapper .header-box-line {
+    width: 1px;
+    height: 120px;
+    background-color: #5B4F4F;
+    margin: 0 auto;
+    margin-top: -10px; }
 
 .about {
   width: 100%;
   background-color: #5B4F4F; }
   .about .aboutContainer {
     height: 100%; }
+  .about .about-box-line {
+    width: 1px;
+    height: 100px;
+    background-color: #C8ABAD;
+    margin: 0 auto; }
   .about .aboutBorderControl {
     position: absolute;
     border-color: #C8ABAD;
     border-width: 1px;
     border-style: solid;
-    width: 65%;
-    height: 50%; }
+    width: 60%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .about .aboutBorder {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 0;
+    position: relative; }
   .about .aboutDescription {
+    position: relative;
     color: #5B4F4F;
     background-color: #D8D8D8;
     width: 50%;
     height: 70%;
     padding: 50px;
     letter-spacing: 1px;
-    line-height: 32px;
-    margin: 100px;
-    z-index: 2; }
+    line-height: 32px; }
 
 .projects {
   display: flex;
   flex-direction: column; }
+  .projects .project-box-line {
+    width: 1px;
+    height: 120px;
+    background-color: #5B4F4F;
+    margin: 0 auto;
+    margin-top: -10px; }
+  .projects .project-box-line-between {
+    width: 1px;
+    height: 120px;
+    background-color: #5B4F4F;
+    margin: 0 auto; }
+  .projects .project-header {
+    color: #5B4F4F;
+    margin: 0 auto;
+    font-size: 45px;
+    line-height: 68px;
+    margin-top: 10px; }
+  .projects .triangles {
+    display: flex;
+    flex-direction: column; }
+    .projects .triangles svg {
+      margin: 0 auto; }
+      .projects .triangles svg:last-child {
+        margin-top: -55px; }
   .projects .project-box {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 70%;
     margin: auto;
-    padding: 50px; }
+    padding: 50px;
+    padding-top: 0;
+    padding-bottom: 0; }
   .projects .project-text {
     float: right;
     width: 500px;
@@ -85,7 +134,8 @@ header {
       letter-spacing: 1px; }
   .projects img {
     object-fit: fill;
-    width: 500px; }
+    width: 500px;
+    height: 100%; }
 
 .contact-box {
   margin: auto;
