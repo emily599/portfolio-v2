@@ -85,6 +85,13 @@ header {
     padding: 50px;
     letter-spacing: 1px;
     line-height: 32px; }
+    .about .aboutDescription .skills-title {
+      font-weight: bold;
+      font-size: 20px; }
+  .about .skills-box div {
+    display: inline-block;
+    width: 400px;
+    margin: 20px; }
 
 .projects {
   display: flex;
@@ -127,13 +134,12 @@ header {
     width: 500px;
     padding: 40px;
     background-color: #d8d8d8;
-    line-height: 30px; }
-    .projects .project-text p {
-      letter-spacing: 1px; }
+    line-height: 30px;
+    flex-basis: 100%;
+      flex-basis-letter-spacing: 1px; }
   .projects img {
-    object-fit: fill;
-    width: 500px;
-    height: 100%; }
+    max-width: 100%;
+    height: auto; }
 
 .contact-box {
   margin: auto;
