@@ -429,6 +429,10 @@ header {
         line-height: 68px;
         margin-top: 10px;
     }
+    // .contact-links-box img {
+    //     height: 20px;
+    //     width: 20px;
+    // }
 
     .contact-links {
         display: flex;
@@ -436,71 +440,28 @@ header {
         margin-top: 50px;
 
         a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $brown-color;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: $grey-color;
+            }
+        }
+
+        a {
             &:not(:last-child) {
                 // margin-right: 10px;
             }
         }
-    }
 
-    .name-email-box {
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 30px;
-        margin-top: 20px;
-    }
-    .name-input-box {
-        background-color: #ffffff;
-        height: 75px;
-        width: 39%;
-        border-radius: 10px;
-        border: none;
-
-        &::placeholder {
-            padding-left: 20px;
+        img {
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
         }
-    }
-
-    .email-input-box {
-        background-color: #ffffff;
-        height: 75px;
-        width: 39%;
-        border-radius: 10px;
-        border: none;
-
-        &::placeholder {
-            padding-left: 20px;
-        }
-    }
-
-    .message-input-box {
-        background-color: #ffffff;
-        height: 400px;
-        width: 86%;
-        margin: auto;
-        margin-bottom: 60px;
-        margin-top: 40px;
-        border-radius: 10px;
-        border: none;
-        border: none;
-
-        &::placeholder {
-            padding-left: 20px;
-        }
-    }
-
-    .submit-button {
-        margin: auto;
-        width: 50%;
-        height: 75px;
-        background-color: white;
-        color: #5b4f4f;
-        border-radius: 10px;
-        border: none;
-        margin-bottom: 40px;
-    }
-
-    .submit-button:hover {
-        background-color: #c8abad;
     }
 }
