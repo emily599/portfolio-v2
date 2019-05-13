@@ -303,3 +303,13 @@ header {
       height: 20px;
       width: 20px;
       margin-right: 5px; }
+
+@media (max-width: 768px) {
+  .header-box-line {
+    display: none; }
+  .about .aboutPhoto {
+    position: relative; }
+  .projects .project-box {
+    flex-direction: column; }
+  .projects .project-text {
+    min-height: initial; } }

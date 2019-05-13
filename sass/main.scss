@@ -465,3 +465,23 @@ header {
         }
     }
 }
+
+$breakpoint-phone: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+// $breakpoint-desktop: 1200px;
+
+@media (max-width: $breakpoint-tablet) {
+    .header-box-line {
+        display: none;
+    }
+    .about .aboutPhoto {
+        position: relative;
+    }
+    .projects .project-box {
+        flex-direction: column;
+    }
+    .projects .project-text {
+        min-height: initial;
+    }
+}
