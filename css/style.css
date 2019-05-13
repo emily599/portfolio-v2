@@ -113,8 +113,8 @@ header {
       width: 80%; }
   .about .skills-box div {
     display: inline-block;
-    width: 400px;
-    margin: 20px; }
+    margin: 20px;
+    margin-right: 80px; }
   .about .aboutPhoto {
     position: absolute;
     right: -10%;
