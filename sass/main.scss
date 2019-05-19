@@ -484,4 +484,24 @@ $breakpoint-laptop: 1024px;
     .projects .project-text {
         min-height: initial;
     }
+    .about .aboutDescription {
+        padding: -15px;
+        margin: -10px;
+        letter-spacing: 0;
+        width: 80%;
+    }
+
+    .about .aboutDescription p {
+        width: 100%;
+    }
+
+    .about .about-box-line {
+        height: 50%;
+    }
+    .projects .project-text {
+        width: 100%;
+    }
+    .projects .project-text:first-of-type {
+        width: 100%;
+    }
 }
