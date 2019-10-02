@@ -45,12 +45,38 @@ header {
     .nameTitle {
     }
     .name {
-        border-bottom-style: solid;
-        border-bottom-color: #5b4f4f;
-        border-bottom-width: 1px;
-        padding-bottom: 10px;
+        h1 {
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                display: inline-block;
+                height: 1em;
+                width: 100%;
+                border-bottom: 1px solid;
+                margin-top: 20px;
+                opacity: 0;
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+                -webkit-transform: scale(0, 1);
+                transform: scale(0, 1);
+                margin-bottom: 10px;
+            }
+
+            &:hover:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+        // border-bottom-style: solid;
+        // border-bottom-color: #5b4f4f;
+        // border-bottom-width: 1px;
+        // padding-bottom: 10px;
     }
     .title {
+        margin-top: 10px;
         padding-top: 10px;
         padding-bottom: 80px;
     }
